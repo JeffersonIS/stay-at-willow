@@ -8,34 +8,25 @@ import Reviews from './Components/Reviews';
 import BookNow from './Components/BookNow';
 import Gallery from './Components/Gallery';
 import TheHome from './Components/TheHome';
+import ReactDOM from "react-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-
-  let component
-  switch (window.location.pathname) {
-    case "/":
-      component = <Home/>
-      break
-    case "/gallery":
-      component = <Gallery/>
-      break
-    case "/reviews":
-      component = <Reviews/>
-      break
-    case "/booknow":
-      component = <BookNow/>
-      break
-    case "/thehome":
-      component = <TheHome/>
-      break
-  }
-
   return (
     <>
-      <Navigation logo={logo} />
-      <div className='page-container'>
+       <div className='page-container'>
         <div className='page-content pb-5'>
-          {component}
+      <HashRouter>
+          <Navigation logo={logo} />
+          <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/thehome" element={<TheHome />} />
+                <Route path="/gallery" element={<Gallery />} />
+                <Route path="/reviews" element={<Reviews />} />
+                <Route path="/booknow" element={<BookNow />} />
+          </Routes>
+        </HashRouter>
+ 
         </div>
         <hr className='text-center' style={{width:"15%", margin:"auto"}}></hr>
 
