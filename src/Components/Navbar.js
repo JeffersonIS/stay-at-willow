@@ -26,6 +26,8 @@ const Navigation = (props) => {
           <Link to="/booknow">Book Now</Link>
         </span>
 
+        {/* <div className='menu-title-mobile'><div>Stay At Willow</div></div> */}
+
         <a className="hamburger-icon" onClick={() => setIsOpen(!isOpen)}>
           {!isOpen ? (
             <FontAwesomeIcon icon={faBars} />

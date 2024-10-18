@@ -17,6 +17,10 @@ body {
   min-height: 95vh; 
 }
 
+.menu-title-mobile{
+  display: none;
+}
+
 .page-content {
   flex: 1;
 }
@@ -324,7 +328,7 @@ body {
 
     .tp {
       position: relative;
-      text-align: left;
+      text-align: center;
     }
 
     .hamburger-icon {
@@ -398,6 +402,14 @@ body {
 
     .description{
       width: 70%;
+    }
+
+    .menu-title-mobile {
+      display: inline-block; /* Keep it inline with other elements */
+      font-size: 22px; /* Set the font size */
+      margin: 0 auto; /* Center the text */
+      text-align: center; /* Center the text inside the block */
+      width: auto; /* Let it take only the space it needs */
     }
   }
   

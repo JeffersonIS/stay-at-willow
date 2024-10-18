@@ -1,6 +1,7 @@
 import React from 'react';
 import hero_kitchen1 from '../Assets/Images/hero_kitchen1.png'
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
         <Col className="text-center hero-text-overlay">
           <h1>STAY AT WILLOW</h1>
           <div className='hero-subtext'>
-            <a href="/booknow"><button className='hero-button'>Book Your Stay Now</button></a>
+            <Link to="/booknow"><button className='hero-button'>Book Your Stay Now</button></Link>
           </div>
         </Col>
       </Row>
@@ -26,7 +27,7 @@ const Home = () => {
             <p className=''>Kitzke Cellars is right next door, and Goose Ridge is just a mile away, making it an ideal spot for wine enthusiasts. Conveniently located only 2 miles from shopping and groceries, and with quick freeway access, you'll be just 12 miles from the airport.</p>
             <p className=''>The fully equipped kitchen has everything you need to prepare meals, making your stay feel like home. Enjoy the ease of self check-in with a keypad, a two-night minimum stay, and no cleaning fee.</p>
         </div>
-        <a href="/booknow"><button className='hero-button-dark mb-3'>Book Your Stay Now</button></a>
+        <Link to="/booknow"><button className='hero-button-dark mb-3'>Book Your Stay Now</button></Link>
 
     </div>
     </>
