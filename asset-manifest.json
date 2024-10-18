@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stay-at-willow/static/css/main.a9e08d05.css",
-    "main.js": "/stay-at-willow/static/js/main.d594ad6d.js",
+    "main.js": "/stay-at-willow/static/js/main.d259e1e1.js",
     "static/js/453.4e7c1ceb.chunk.js": "/stay-at-willow/static/js/453.4e7c1ceb.chunk.js",
     "static/media/view1.JPG": "/stay-at-willow/static/media/view1.5f7e4b89a9c3c6983195.JPG",
     "static/media/hero_kitchen1.png": "/stay-at-willow/static/media/hero_kitchen1.b301e104b13591049a6a.png",
@@ -48,11 +48,11 @@
     "static/media/3stars.png": "/stay-at-willow/static/media/3stars.001170cf33e7a868234a.png",
     "index.html": "/stay-at-willow/index.html",
     "main.a9e08d05.css.map": "/stay-at-willow/static/css/main.a9e08d05.css.map",
-    "main.d594ad6d.js.map": "/stay-at-willow/static/js/main.d594ad6d.js.map",
+    "main.d259e1e1.js.map": "/stay-at-willow/static/js/main.d259e1e1.js.map",
     "453.4e7c1ceb.chunk.js.map": "/stay-at-willow/static/js/453.4e7c1ceb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9e08d05.css",
-    "static/js/main.d594ad6d.js"
+    "static/js/main.d259e1e1.js"
   ]
 }
