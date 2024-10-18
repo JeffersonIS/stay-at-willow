@@ -1,0 +1,403 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.airbnb-link{
+  color: #0071e3;
+  text-decoration: none;
+}
+
+.airbnb-link:hover{
+  text-decoration: underline;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh; 
+}
+
+.page-content {
+  flex: 1;
+}
+
+.description{
+  width: 45%;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.spacer{
+  height: 5em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.tp {
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgb(230, 229, 229);
+    z-index: 11;
+ }
+
+ .tp a {
+    color:#4a4a4a;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 22px;
+ }
+
+ .tp a:hover {
+    color: #717171;
+ }
+
+ .tp a.active {
+    background-color: #D6EAF8;
+    color: #2C3E50;
+ }
+
+ .hamburger-icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  z-index: 100;
+}
+
+.menu-items-responsive{
+  display: none;
+}
+
+
+ .logo {
+    position: absolute;
+    left: 10%;
+ }
+
+ .icon-container{
+  margin: auto;
+  width: 40%;
+ }
+
+ .icon {
+  padding-right: 6px;
+  font-size: 22px;
+  color: #4a4a4a;
+ }
+
+ .icon-label {
+  font-size: 22px;
+  color: #4a4a4a;
+ }
+
+ .amenity-label{
+  font-size: 23px;
+  color: #4a4a4a;
+ }
+
+.bedroom-card{
+  border: 1px solid #4a4a4a35;
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 1.2em;
+  display: flex;
+  gap: 16px;
+}
+
+.bedroom-card img{
+  width: 200px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.bedroom-card div{
+  padding: .1em;
+  color: #4a4a4a;
+  font-size: 22px;
+}
+
+
+.bedroom-card-text{
+  font-size: 18px;
+  font-style: none;
+}
+
+ 
+/* Add this CSS to your styles */
+.toggle-container {
+  display: inline-block;
+  border-bottom: 1px solid #bdbdbd;
+  margin: auto;
+}
+
+.toggle-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: .1em;
+  width: 10em;
+  font-size: 20px;
+  color: #4a4a4a;
+  font-style: italic;
+}
+
+.checked{
+  background-color: #e7e7e7;
+}
+
+.not-checked:hover{
+  background-color: #f4f4f4;
+}
+
+
+ .review-card {
+  box-shadow: 1px 1px 4px 1px lightgray;
+  border-radius: 0px !important;
+  z-index: -1;
+ }
+
+ .text-left{
+  text-align: left;
+ }
+
+ .text-right {
+  text-align: right;
+ }
+
+ .description-title{
+  font-size: 25px;
+  color: #4a4a4a;
+  font-style: italic;
+ }
+
+/* 
+ .read-more-content {
+  text-align: left;
+  width: 100%;
+ }
+
+ .read-more {
+  color: blue
+ }
+
+ .read-more:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.646),
+} */
+
+ .logo:hover{
+    cursor: pointer;
+ }
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the whole container without distortion */
+  }
+  
+  .hero-text-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 9;
+  }
+
+  .hero-button{
+    background-color: #e3dddc15;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;  
+}
+  
+  .hero-button:hover {
+    background-color: #e3dddc41;
+    cursor: pointer;
+  }
+      
+
+  .hero-subtext{
+    font-size: 40px;
+  }
+
+  .hero-button-dark{
+    border: 1px solid #4a4a4a;
+    color: #4a4a4a;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    background-color: white;
+}
+  
+  .hero-button-dark:hover {
+    background-color: #4a4a4a14;
+    color: #4a4a4a;
+    cursor: pointer;
+
+  }
+  
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 3px;
+    /* -webkit-text-stroke: 1px rgb(117, 117, 117); */
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  center {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 1100px) {
+    .bedroom-card {
+        flex-direction: column; /* stack elements vertically */
+        align-items: center; 
+        text-align: center;
+    }
+
+    .bedroom-card img {
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  
+
+    .hero-text-overlay {
+      top: 40%; /* Lower the text on mobile to keep space */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+  }
+
+  .hero-button {
+      font-size: 24px; 
+  }
+
+    .icon-container{
+      width: 80%;
+     }
+
+     .toggle-button {
+      padding: .3em;
+      width: 7.5em;
+    }
+
+    .tp {
+      position: relative;
+      text-align: left;
+    }
+
+    .hamburger-icon {
+      display: flex;
+      cursor: pointer;
+      position: absolute;
+      color: #4a4a4a;
+    }
+  
+    .menu-items {
+      display: none;
+    }
+
+    .menu-items-responsive {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      /* top: -10px; */
+      background-color: #0000008b;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .menu-items-responsive a {
+      position: inherit;
+      display: flex;
+      flex-direction: column;
+      color: #fffffff3;
+      text-decoration: none;
+      width: 100%;
+      padding: 10px 30px;
+      font-size: 40px;
+      font-weight: 600;
+      width: 70%;
+      margin: auto;
+      /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+      z-index: 12;
+    }
+    .menu-items-responsive a:hover {
+      color: rgba(255, 255, 255, 0.816);
+      border-radius: 5px;
+    }
+
+    .hamburger-icon-open{
+      position: fixed;
+      margin-top: 25px;
+      margin-right: 30px;
+      font-size: 35px;
+      color: white;
+      right: 0;
+    }
+
+    .hamburger-icon-open:hover{
+      color: rgba(255, 255, 255, 0.861);
+      cursor: pointer;
+    }
+
+    .menu-items-container{
+      position: relative;
+      margin-top: 15vh;
+    }
+  
+    .menu-items  a {
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .description{
+      width: 70%;
+    }
+  }
+  
